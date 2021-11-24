@@ -5,19 +5,15 @@ class User {
         this.cardNumber = cardNumber;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.starTime = startTime;
+        this.startTime = startTime;
         this.endTime = endTime;  
-        this.timeRented = [];
     }
 
-    payment(timeRented) {
-        return (timeRented * .15) + 1
-    }
-
-    totalTime(endTime,startTime) {
-        const timeDifference = endTime - startTime;
-        this.timeRented.push(timeDifference);
+    totalPayment() {
+        return (this.endTime - this.startTime) * 0.15 + 1 
     }
 }
+let u1 = new User ("Me", "Topsecret", "375894", "me@nomail.com", "214-777-0000", 1900, 2345)
+console.log(u1.totalPayment())
 
-module.exports = User;
+ module.exports = User;
