@@ -13,7 +13,7 @@ describe('Scooter', () => {
 
     test ('test rent method', () => {
         testScooter.isRented()
-        expect(testScooter.checkedOut).toBeFalsy()
+        expect(testScooter.checkedOut).toBeFalsy
 
     })
 })
