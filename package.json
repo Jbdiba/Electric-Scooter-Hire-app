@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Jbdiba/Electric-Scooter-Hire-app#readme",
   "dependencies": {
     "jest": "^27.3.1"
+  },
+  "directories": {
+    "test": "test"
   }
 }
